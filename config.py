@@ -1,13 +1,16 @@
-
 import bluetooth
 import struct
 
 # === Pinos de configuração do hardware ===
 
-# GPIO que ativa o relé do moedeiro e noteiro
+# GPIO que ativa o relé do moedeiro
 RELAY_MOEDA_PIN = 21     # novo pino (em vez do queimado 18)
-RELAY_NOTA_PIN = 19
 
+# GPIO que ativa o relé da nota de 10€
+RELAY_NOTA_10_PIN = 19
+
+# GPIO que ativa o relé da nota de 5€
+RELAY_NOTA_5_PIN = 18     # usa um pino livre (verifica se 18 já foi substituído)
 
 # GPIO onde chegam os pulsos do moedeiro
 MOEDA_PIN = 15
