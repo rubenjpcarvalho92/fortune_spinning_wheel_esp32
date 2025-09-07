@@ -1,7 +1,7 @@
 from machine import Pin, UART
 import time
 from ble_peripheral import BLESimplePeripheral
-from config import RELAY_MOEDA_PIN, RELAY_NOTA_10_PIN, RELAY_NOTA_5_PIN, MOEDA_PIN, NOTA_PIN
+from config import RELAY_MOEDA_PIN, RELAY_NOTA_10_PIN, RELAY_NOTA_5_PIN, MOEDA_PIN, NOTA_PIN, POWER_ON, RELAY_POWER_ON
 
 # === UART Impressora ===
 printer_uart = UART(2, baudrate=115200, tx=Pin(17), rx=Pin(16))

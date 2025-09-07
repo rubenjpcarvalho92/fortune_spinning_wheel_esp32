@@ -22,6 +22,8 @@ NOTA_PIN = 23
 PRINTER_TX = 16
 PRINTER_RX = 17
 
+POWER_ON = 13
+
 
 def advertising_payload(limited_disc=False, br_edr=False, name=None, services=None):
     payload = bytearray()
